@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="32" viewBox="0 0 192 32" role="img" aria-label="Build app with Codex">
-  <rect x="0.5" y="0.5" width="191" height="31" rx="6" fill="#24292e" stroke="#444d56"/>
-  <rect x="0.5" y="0.5" width="36" height="31" rx="6" fill="#2f363d" stroke="#444d56"/>
-  <rect x="30" y="0.5" width="6" height="31" fill="#2f363d"/>
-  <text x="18.5" y="20.5" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">CX</text>
-  <text x="46" y="20.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Build app with Codex</text>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="32" viewBox="0 0 186 32" width="186" role="img" aria-label="Build app with Codex">
+  <rect x="0.5" y="0.5" width="185" height="31" rx="5.5" fill="#24292e" stroke="#444d56"/>
+  <path d="m6.5.5h29.5v31h-29.5c-3.03757 0-5.5-2.4624-5.5-5.5v-20c0-3.03757 2.46243-5.5 5.5-5.5z" fill="#2f363d"/>
+  <text x="18" y="20.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">CX</text>
+  <text x="52" y="20" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="500" fill="#fff">Build app with Codex</text>
 </svg>
