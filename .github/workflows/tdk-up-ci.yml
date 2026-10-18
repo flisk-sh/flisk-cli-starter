@@ -48,7 +48,7 @@ jobs:
         run: |
           nohup tdk up shop > up.log 2>&1 &
           for i in $(seq 1 60); do
-            if curl -sf http://api.shop.localhost/api/orders/health; then exit 0; fi
+            if curl -sf http://localhost:4000/health; then exit 0; fi
             sleep 5
           done
           echo "Service did not become healthy"; tail -200 up.log; exit 1
@@ -58,14 +58,14 @@ jobs:
 
       - name: Screenshot the running service
         working-directory: shop
-        run: npx -y playwright@1.47.2 screenshot --wait-for-timeout=2000 http://api.shop.localhost/api/orders/health running-service.png
+        run: npx -y playwright@1.47.2 screenshot --wait-for-timeout=2000 http://localhost:4000/health running-service.png
 
       - name: Job summary
         run: |
           {
             echo "## TDK app is running"
             echo '```'
-            curl -s http://api.shop.localhost/api/orders/health
+            curl -s http://localhost:4000/health
             echo
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
