@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="32" viewBox="0 0 229 32" width="229" role="img" aria-label="Build app with Windsurf &gt;&gt;">
-  <path d="m6.5.5h25.5v31h-25.5c-3.03757 0-5.5-2.4624-5.5-5.5v-20c0-3.03757 2.46243-5.5 5.5-5.5z" fill="#2f363d" stroke="#444d56"/>
-  <text x="16.0" y="21" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">W</text>
-  <path d="m32.5h191c3.038 0 5.5 2.46243 5.5 5.5v20c0 3.0376-2.462 5.5-5.5 5.5h-191z" fill="#24292e"/>
-  <text x="44" y="20.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Build app with Windsurf &gt;&gt;</text>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="32" viewBox="0 0 217 32" width="217" role="img" aria-label="Build app with Windsurf">
+  <path d="m6.5.5h33.5v31h-33.5c-3.03757 0-5.5-2.4624-5.5-5.5v-20c0-3.03757 2.46243-5.5 5.5-5.5z" fill="#2f363d" stroke="#444d56"/>
+  <text x="20.0" y="20.5" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">WS</text>
+  <path d="m40.5h171c3.038 0 5.5 2.46243 5.5 5.5v20c0 3.0376-2.462 5.5-5.5 5.5h-171z" fill="#24292e"/>
+  <text x="52" y="20.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Build app with Windsurf</text>
 </svg>
