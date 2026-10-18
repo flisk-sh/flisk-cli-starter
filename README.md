@@ -10,6 +10,12 @@ Fastest way (recommended): open the [TDK starter](https://github.com/tdk-landsca
   <a href="https://stackblitz.com/github/tdk-landscape/tdk-cli-starter"><img src="https://raw.githubusercontent.com/tdk-landscape/tdk-cli-starter/main/.github/buttons/build-stackblitz.svg" alt="Build app in StackBlitz" height="40"></a>&nbsp;&nbsp;<a href="https://codesandbox.io/p/github/tdk-landscape/tdk-cli-starter"><img src="https://raw.githubusercontent.com/tdk-landscape/tdk-cli-starter/main/.github/buttons/build-codesandbox.svg" alt="Build app in CodeSandbox" height="40"></a><br>
 </p>
 
+### Ask an AI to build it
+
+<p align="center">
+[![Grok](https://img.shields.io/badge/Grok-111111?style=for-the-badge&logo=x&logoColor=white)](https://grok.com/?q=Build%20an%20app%20with%20the%20TDK%20CLI.%20Read%20the%20setup%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%20and%20walk%20me%20through%20it%20step%20by%20step.)&nbsp;[![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://claude.ai/new?q=Build%20an%20app%20with%20the%20TDK%20CLI.%20Read%20the%20setup%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%20and%20walk%20me%20through%20it%20step%20by%20step.)&nbsp;[![ChatGPT](https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge&logo=openai&logoColor=white)](https://chatgpt.com/?q=Build%20an%20app%20with%20the%20TDK%20CLI.%20Read%20the%20setup%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%20and%20walk%20me%20through%20it%20step%20by%20step.)
+</p>
+
 ### Use with your AI agent
 
 <p align="center">
