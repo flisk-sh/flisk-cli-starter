@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="32" viewBox="0 0 244 32" width="244" role="img" aria-label="Build app with Augment Code">
-  <path d="m6.5.5h33.5v31h-33.5c-3.03757 0-5.5-2.4624-5.5-5.5v-20c0-3.03757 2.46243-5.5 5.5-5.5z" fill="#2f363d" stroke="#444d56"/>
-  <text x="20.0" y="20.5" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">AC</text>
-  <path d="m40.5h198c3.038 0 5.5 2.46243 5.5 5.5v20c0 3.0376-2.462 5.5-5.5 5.5h-198z" fill="#24292e"/>
-  <text x="52" y="20.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Build app with Augment Code</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="238" height="32" viewBox="0 0 238 32" role="img" aria-label="Build app with Augment Code">
+  <rect x="0.5" y="0.5" width="237" height="31" rx="6" fill="#24292e" stroke="#444d56"/>
+  <rect x="0.5" y="0.5" width="36" height="31" rx="6" fill="#2f363d" stroke="#444d56"/>
+  <rect x="30" y="0.5" width="6" height="31" fill="#2f363d"/>
+  <text x="18.5" y="20.5" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">AC</text>
+  <text x="46" y="20.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Build app with Augment Code</text>
 </svg>
