@@ -4,6 +4,16 @@ TDK CLI builds your local stack. It does not deploy it. This guide shows how to 
 
 Official site: https://portal.azure.com/
 
+## Ask an AI to do it
+
+Open one of these with the prompt already filled in:
+
+- [Grok](https://grok.com/?q=Deploy%20the%20app%20I%20built%20with%20the%20TDK%20CLI%20to%20Azure.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Fazure.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
+- [Claude](https://claude.ai/new?q=Deploy%20the%20app%20I%20built%20with%20the%20TDK%20CLI%20to%20Azure.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Fazure.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
+- [ChatGPT](https://chatgpt.com/?q=Deploy%20the%20app%20I%20built%20with%20the%20TDK%20CLI%20to%20Azure.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Fazure.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
+
+Prompt: _Deploy the app I built with the TDK CLI to Azure. Read the guide at https://github.com/tdk-landscape/tdk-cli-starter/blob/main/docs/deploy/azure.md and walk me through it step by step._
+
 ## 1. Build the app locally
 
 ```bash
