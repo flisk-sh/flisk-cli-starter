@@ -14,6 +14,14 @@ Fastest way (recommended): open the [TDK starter](https://github.com/tdk-landsca
   <a href="https://grok.com/?q=Build%20an%20app%20with%20the%20TDK%20CLI.%20Read%20the%20setup%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%20and%20walk%20me%20through%20it%20step%20by%20step."><img src=".github/buttons/ai-grok.svg" alt="Build app with Grok" height="32"></a>&nbsp;&nbsp;<a href="https://claude.ai/new?q=Build%20an%20app%20with%20the%20TDK%20CLI.%20Read%20the%20setup%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%20and%20walk%20me%20through%20it%20step%20by%20step."><img src=".github/buttons/ai-claude.svg" alt="Build app with Claude" height="32"></a>&nbsp;&nbsp;<a href="https://chatgpt.com/?q=Build%20an%20app%20with%20the%20TDK%20CLI.%20Read%20the%20setup%20guide%20at%20https%3A%2F%2Fgithub.com%2Ftdk-landscape%2Ftdk-cli-starter%20and%20walk%20me%20through%20it%20step%20by%20step."><img src=".github/buttons/ai-chatgpt.svg" alt="Build app with ChatGPT" height="32"></a><br>
 </p>
 
+### Deploy
+
+<p align="center">
+  <a href="https://console.hetzner.cloud/"><img src=".github/buttons/deploy-hetzner.svg" alt="Deploy to Hetzner" height="32"></a> &nbsp;<a href="https://www.ovhcloud.com/"><img src=".github/buttons/deploy-ovhcloud.svg" alt="Deploy to OVHcloud" height="32"></a> &nbsp;<a href="https://www.exoscale.com/"><img src=".github/buttons/deploy-exoscale.svg" alt="Deploy to Exoscale" height="32"></a><br>
+  <a href="https://www.vultr.com/"><img src=".github/buttons/deploy-vultr.svg" alt="Deploy to Vultr" height="32"></a> &nbsp;<a href="https://www.scaleway.com/"><img src=".github/buttons/deploy-scaleway.svg" alt="Deploy to Scaleway" height="32"></a> &nbsp;<a href="https://multipass.run/"><img src=".github/buttons/deploy-multipass.svg" alt="Deploy to Multipass" height="32"></a><br>
+  <a href="https://www.open-telekom-cloud.com/"><img src=".github/buttons/deploy-opentelekomcloud.svg" alt="Deploy to OpenTelekomCloud" height="32"></a><br>
+</p>
+
 ### Build app with your AI agent
 
 <p align="center">
