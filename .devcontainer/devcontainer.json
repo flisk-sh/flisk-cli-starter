@@ -1,0 +1,9 @@
+{
+  "name": "TDK CLI starter",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "npm install && npm install -g @tdk-landscape/tdk-cli-core@1.3.185",
+  "forwardPorts": [80, 8080]
+}

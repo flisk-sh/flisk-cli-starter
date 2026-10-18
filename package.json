@@ -1,0 +1,13 @@
+{
+  "name": "tdk-cli-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starter for making a local app stack with the TDK CLI",
+  "scripts": {
+    "tdk:dry-run": "tdk up shop --dry-run",
+    "tdk:up": "tdk up shop"
+  },
+  "dependencies": {
+    "@tdk-landscape/tdk-cli-core": "1.3.185"
+  }
+}
