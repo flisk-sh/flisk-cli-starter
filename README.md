@@ -54,11 +54,12 @@ Fastest way (recommended): open the [TDK starter](https://github.com/tdk-landsca
 </table>
 
 <details>
-<summary>More agents (6)</summary>
+<summary>More agents (7)</summary>
 
 <table align="center">
   <tr><td align="center" valign="middle" width="33%"><a href="https://zed.dev"><img src=".github/buttons/zed.svg" alt="Build app with Zed" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://aider.chat/"><img src=".github/buttons/aider.svg" alt="Build app with Aider" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://coder.com"><img src=".github/buttons/coder.svg" alt="Build app with Coder" height="32"></a></td></tr>
-  <tr><td align="center" valign="middle" width="33%"><a href="https://github.com/google-gemini/gemini-cli"><img src=".github/buttons/gemini-cli.svg" alt="Build app with Gemini CLI" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://codeanywhere.com"><img src=".github/buttons/codeanywhere.svg" alt="Build app with Codeanywhere" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://www.augmentcode.com"><img src=".github/buttons/augment-code.svg" alt="Build app with Augment Code" height="32"></a></td></tr>
+  <tr><td align="center" valign="middle" width="33%"><a href="https://github.com/google-gemini/gemini-cli"><img src=".github/buttons/gemini-cli.svg" alt="Build app with Gemini CLI" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://antigravity.google/"><img src=".github/buttons/antigravity.svg" alt="Build app with Antigravity" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://codeanywhere.com"><img src=".github/buttons/codeanywhere.svg" alt="Build app with Codeanywhere" height="32"></a></td></tr>
+  <tr><td align="center" valign="middle" width="33%"><a href="https://www.augmentcode.com"><img src=".github/buttons/augment-code.svg" alt="Build app with Augment Code" height="32"></a></td></tr>
 </table>
 
 </details>
