@@ -16,8 +16,6 @@ Fastest way (recommended): open the [TDK starter](https://github.com/tdk-landsca
 
 ### Deploy
 
-Each button opens a guide in [the starter repo](https://github.com/tdk-landscape/tdk-cli-starter/blob/main/docs/deploy) with the steps.
-
 <table align="center">
   <tr><td align="center" valign="middle" width="33%"><a href="https://console.hetzner.cloud/"><img src=".github/buttons/deploy-hetzner.svg" alt="Deploy to Hetzner" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://www.ovhcloud.com/"><img src=".github/buttons/deploy-ovhcloud.svg" alt="Deploy to OVHcloud" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://www.exoscale.com/"><img src=".github/buttons/deploy-exoscale.svg" alt="Deploy to Exoscale" height="32"></a></td></tr>
   <tr><td align="center" valign="middle" width="33%"><a href="https://www.vultr.com/"><img src=".github/buttons/deploy-vultr.svg" alt="Deploy to Vultr" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://www.scaleway.com/"><img src=".github/buttons/deploy-scaleway.svg" alt="Deploy to Scaleway" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://multipass.run/"><img src=".github/buttons/deploy-multipass.svg" alt="Deploy to Multipass" height="32"></a></td></tr>
