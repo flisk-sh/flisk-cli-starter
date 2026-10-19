@@ -1,5 +1,7 @@
 # TDK CLI template
 
+[![Uses TDK CLI](https://img.shields.io/badge/Uses-TDK%20CLI-blue?style=flat-square&logo=github)](https://github.com/tdk-landscape/tdk-cli-core)
+
 ## Build your app in one click
 
 Fastest way (recommended): open the [TDK starter](https://github.com/tdk-landscape/tdk-cli-starter) in a ready-to-use environment.
@@ -91,10 +93,4 @@ npm run tdk:up
 curl http://api.shop.localhost/api/orders/health
 ```
 
-`tdk up` prints the host ports it chose, so use the URL it prints.
-
-## Learn more
-
-- [Quickstart](https://tdk-landscape.github.io/tdk-website/docs/quickstart/)
-- [Examples](https://tdk-landscape.github.io/tdk-website/docs/examples/)
-- [What TDK writes](https://github.com/tdk-landscape/tdk-cli-core/blob/main/docs/generated-files.md)
+`tdk up` prints the host ports it chose. It uses port 80 when it is free, so URLs carry no port. Otherwise it picks one from 8080-8180.
