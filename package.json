@@ -7,7 +7,7 @@
     "tdk:dry-run": "tdk up shop --dry-run",
     "tdk:up": "tdk up shop"
   },
-  "dependencies": {
-    "@tdk-landscape/tdk-cli-core": "1.3.185"
+  "devDependencies": {
+    "@tdk-landscape/tdk-cli-core": "1.3.186"
   }
 }
