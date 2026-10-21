@@ -46,9 +46,26 @@ jobs:
       - name: Start the stack with tdk up
         working-directory: shop
         run: |
-          nohup tdk up shop > up.log 2>&1 &
-          for i in $(seq 1 60); do
-            if curl -sf http://localhost:4000/health; then exit 0; fi
+          tdk up shop > up.log 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true; tdk down >/dev/null 2>&1 || true' EXIT
+          for _ in $(seq 1 90); do
+            grep -q 'Running tilt up' up.log && break
+            if ! kill -0 "$pid" 2>/dev/null; then tail -200 up.log; exit 1; fi
+            sleep 2
+          done
+          # The routed URL is the one the stack published, not the port the service
+          # listens on inside its container: Traefik picks the host port.
+          awk '/Starting [0-9]+ service/{found=1} /Running tilt up/{found=0} found' up.log \
+            | grep -oE 'https?://[^ ]+' | sort -u > urls.txt || true
+          grep -E '^https?://api\.' urls.txt > backend-urls.txt || true
+          if [ ! -s backend-urls.txt ]; then
+            tail -200 up.log
+            echo 'tdk up did not report a backend URL' >&2
+            exit 1
+          fi
+          for _ in $(seq 1 60); do
+            if curl -sf -o /dev/null "$(head -1 backend-urls.txt)"; then exit 0; fi
             sleep 5
           done
           echo "Service did not become healthy"; tail -200 up.log; exit 1
@@ -58,14 +75,15 @@ jobs:
 
       - name: Screenshot the running service
         working-directory: shop
-        run: npx -y playwright@1.47.2 screenshot --wait-for-timeout=2000 http://localhost:4000/health running-service.png
+        run: npx -y playwright@1.47.2 screenshot --wait-for-timeout=2000 "$(head -1 backend-urls.txt)" running-service.png
 
       - name: Job summary
+        working-directory: shop
         run: |
           {
             echo "## TDK app is running"
             echo '```'
-            curl -s http://localhost:4000/health
+            curl -s "$(head -1 backend-urls.txt)"
             echo
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
