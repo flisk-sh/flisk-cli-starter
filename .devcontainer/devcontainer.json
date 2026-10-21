@@ -4,6 +4,6 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "postCreateCommand": "npm install && npm install -g @tdk-landscape/tdk-cli-core@1.3.185",
+  "postCreateCommand": "npm install && npm install -g @flisk-sh/flisk@1.3.190",
   "forwardPorts": [80, 8080]
 }

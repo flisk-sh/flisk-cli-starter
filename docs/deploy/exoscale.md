@@ -17,7 +17,7 @@ Prompt: _Deploy the app I built with the TDK CLI to Exoscale. Read the guide at 
 ## 1. Build the app locally
 
 ```bash
-npm install -g @tdk-landscape/tdk-cli-core@1.3.185
+npm install -g @flisk-sh/flisk@1.3.190
 mkdir shop && cd shop
 tdk project --yes
 tdk resource orders-api --type backend --stack shop --yes
