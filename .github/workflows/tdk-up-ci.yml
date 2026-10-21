@@ -1,4 +1,4 @@
-# Builds an app with the TDK CLI, starts it with tdk up on a GitHub Actions runner,
+# Builds an app with the TDK CLI, starts it with flisk up on a GitHub Actions runner,
 # checks the health endpoint, and uploads a screenshot of the running service.
 name: Build app with TDK on CI
 
@@ -40,15 +40,15 @@ jobs:
       - name: Create the app
         run: |
           mkdir shop && cd shop
-          tdk project --yes
-          tdk resource orders-api --type backend --stack shop --yes
+          flisk project --yes
+          flisk resource orders-api --type backend --stack shop --yes
 
-      - name: Start the stack with tdk up
+      - name: Start the stack with flisk up
         working-directory: shop
         run: |
-          tdk up shop > up.log 2>&1 &
+          flisk up shop > up.log 2>&1 &
           pid=$!
-          trap 'kill "$pid" 2>/dev/null || true; tdk down >/dev/null 2>&1 || true' EXIT
+          trap 'kill "$pid" 2>/dev/null || true; flisk down >/dev/null 2>&1 || true' EXIT
           for _ in $(seq 1 90); do
             grep -q 'Running tilt up' up.log && break
             if ! kill -0 "$pid" 2>/dev/null; then tail -200 up.log; exit 1; fi
@@ -61,7 +61,7 @@ jobs:
           grep -E '^https?://api\.' urls.txt > backend-urls.txt || true
           if [ ! -s backend-urls.txt ]; then
             tail -200 up.log
-            echo 'tdk up did not report a backend URL' >&2
+            echo 'flisk up did not report a backend URL' >&2
             exit 1
           fi
           for _ in $(seq 1 60); do
@@ -101,4 +101,4 @@ jobs:
       - name: Stop the stack
         if: always()
         working-directory: shop
-        run: tdk down || true
+        run: flisk down || true
