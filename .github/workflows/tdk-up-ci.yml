@@ -64,6 +64,10 @@ jobs:
             echo 'tdk up did not report a backend URL' >&2
             exit 1
           fi
+          # *.localhost resolves to ::1 first, and the proxy listens on IPv4, so the
+          # host is pinned to IPv4 for the browser in the next step.
+          host=$(head -1 backend-urls.txt | sed -E 's#^https?://([^/]+)/.*#\1#')
+          echo "127.0.0.1 $host" | sudo tee -a /etc/hosts >/dev/null
           for _ in $(seq 1 60); do
             if curl -sf -o /dev/null "$(head -1 backend-urls.txt)"; then exit 0; fi
             sleep 5
