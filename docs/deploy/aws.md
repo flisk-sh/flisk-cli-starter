@@ -1,6 +1,6 @@
 # Deploy to AWS
 
-TDK CLI builds your local stack. It does not deploy it. This guide shows how to run the app you built with `tdk` on AWS.
+Flisk CLI builds your local stack. It does not deploy it. This guide shows how to run the app you built with `flisk` on AWS.
 
 Official site: https://aws.amazon.com/
 
@@ -8,24 +8,24 @@ Official site: https://aws.amazon.com/
 
 Open one of these with the prompt already filled in:
 
-- [Grok](https://grok.com/?q=Deploy%20the%20app%20I%20built%20with%20the%20TDK%20CLI%20to%20AWS.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Fflisk-sh%2Ftdk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Faws.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
-- [Claude](https://claude.ai/new?q=Deploy%20the%20app%20I%20built%20with%20the%20TDK%20CLI%20to%20AWS.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Fflisk-sh%2Ftdk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Faws.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
-- [ChatGPT](https://chatgpt.com/?q=Deploy%20the%20app%20I%20built%20with%20the%20TDK%20CLI%20to%20AWS.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Fflisk-sh%2Ftdk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Faws.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
+- [Grok](https://grok.com/?q=Deploy%20the%20app%20I%20built%20with%20the%20Flisk%20CLI%20to%20AWS.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Fflisk-sh%2Fflisk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Faws.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
+- [Claude](https://claude.ai/new?q=Deploy%20the%20app%20I%20built%20with%20the%20Flisk%20CLI%20to%20AWS.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Fflisk-sh%2Fflisk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Faws.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
+- [ChatGPT](https://chatgpt.com/?q=Deploy%20the%20app%20I%20built%20with%20the%20Flisk%20CLI%20to%20AWS.%20Read%20the%20guide%20at%20https%3A%2F%2Fgithub.com%2Fflisk-sh%2Fflisk-cli-starter%2Fblob%2Fmain%2Fdocs%2Fdeploy%2Faws.md%20and%20walk%20me%20through%20it%20step%20by%20step.)
 
-Prompt: _Deploy the app I built with the TDK CLI to AWS. Read the guide at https://github.com/flisk-sh/tdk-cli-starter/blob/main/docs/deploy/aws.md and walk me through it step by step._
+Prompt: _Deploy the app I built with the Flisk CLI to AWS. Read the guide at https://github.com/flisk-sh/flisk-cli-starter/blob/main/docs/deploy/aws.md and walk me through it step by step._
 
 ## 1. Build the app locally
 
 ```bash
 npm install -g @flisk-sh/flisk@1.3.190
 mkdir shop && cd shop
-tdk project --yes
-tdk resource orders-api --type backend --stack shop --yes
-tdk up shop --dry-run
-tdk up shop
+flisk project --yes
+flisk resource orders-api --type backend --stack shop --yes
+flisk up shop --dry-run
+flisk up shop
 ```
 
-Check the service on the URL that `tdk up` prints.
+Check the service on the URL that `flisk up` prints.
 
 ## 2. Create the target on AWS
 
@@ -41,4 +41,4 @@ AWS console: launch an EC2 instance (Ubuntu LTS) with an SSH key pair.
 
 Call the health endpoint of each service, for example `curl https://<your-host>/api/orders/health`.
 
-Production setup (TLS, secrets, backups) is up to you. TDK does not manage it.
+Production setup (TLS, secrets, backups) is up to you. Flisk does not manage it.

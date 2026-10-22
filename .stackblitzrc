@@ -1,4 +1,4 @@
 {
   "installDependencies": true,
-  "startCommand": "npx tdk --version"
+  "startCommand": "npx flisk --version"
 }

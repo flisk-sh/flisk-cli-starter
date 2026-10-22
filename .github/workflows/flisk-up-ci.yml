@@ -1,6 +1,6 @@
-# Builds an app with the TDK CLI, starts it with flisk up on a GitHub Actions runner,
+# Builds an app with the Flisk CLI, starts it with flisk up on a GitHub Actions runner,
 # checks the health endpoint, and uploads a screenshot of the running service.
-name: Build app with TDK on CI
+name: Build app with Flisk on CI
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  tdk-up:
+  flisk-up:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -27,7 +27,7 @@ jobs:
         with:
           bun-version: 1.2.19
 
-      - name: Install TDK CLI
+      - name: Install Flisk CLI
         run: npm install -g @flisk-sh/flisk@1.3.190
 
       - name: Install Tilt
@@ -81,7 +81,7 @@ jobs:
         working-directory: shop
         run: |
           {
-            echo "## TDK app is running"
+            echo "## Flisk app is running"
             echo '```'
             curl -s "$(head -1 backend-urls.txt)"
             echo
@@ -92,7 +92,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tdk-up-evidence
+          name: flisk-up-evidence
           path: |
             shop/running-service.png
             shop/up.log
