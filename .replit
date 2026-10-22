@@ -1,2 +1,2 @@
-run = "npm run tdk:dry-run"
+run = "npm run flisk:dry-run"
 entrypoint = "README.md"

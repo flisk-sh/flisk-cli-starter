@@ -1,5 +1,5 @@
 # Agent notes
 
-- This repo starts a TDK CLI stack. Install with `npm install`, then run `npx tdk --version`.
-- Create the app with `tdk project --yes`, then `tdk resource <name> --type backend --stack shop --yes`.
-- Preview with `npm run tdk:dry-run` before `npm run tdk:up`. `tdk up` needs Docker and Tilt.
+- This repo starts a Flisk CLI stack. Install with `npm install`, then run `npx flisk --version`.
+- Create the app with `flisk project --yes`, then `flisk resource <name> --type backend --stack shop --yes`.
+- Preview with `npm run flisk:dry-run` before `npm run flisk:up`. `flisk up` needs Docker and Tilt.

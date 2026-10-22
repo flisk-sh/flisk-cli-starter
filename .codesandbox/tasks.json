@@ -1,3 +1,3 @@
 {
-  "setupTasks": [{ "name": "Install TDK CLI", "command": "npm install" }]
+  "setupTasks": [{ "name": "Install Flisk CLI", "command": "npm install" }]
 }

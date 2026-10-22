@@ -1,5 +1,5 @@
 {
-  "name": "TDK CLI starter",
+  "name": "Flisk CLI starter",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
