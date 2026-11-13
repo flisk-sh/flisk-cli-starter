@@ -48,7 +48,9 @@ jobs:
         run: |
           flisk up shop > up.log 2>&1 &
           pid=$!
-          trap 'kill "$pid" 2>/dev/null || true; flisk down >/dev/null 2>&1 || true' EXIT
+          # Tear the stack down only when this step fails. On success it must keep running:
+          # the next steps screenshot it, and "Stop the stack" shuts it down at the end.
+          trap 'rc=$?; if [ "$rc" -ne 0 ]; then kill "$pid" 2>/dev/null || true; flisk down >/dev/null 2>&1 || true; fi' EXIT
           for _ in $(seq 1 90); do
             grep -q 'Running tilt up' up.log && break
             if ! kill -0 "$pid" 2>/dev/null; then tail -200 up.log; exit 1; fi
