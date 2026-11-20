@@ -21,6 +21,17 @@ jobs:
     if: github.event_name != 'schedule'
     uses: flisk-sh/.github/.github/workflows/ci.yml@b5eeea945364038cd2143e9676b77fc9af293dfa # v1.4.0
 
+  buttons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check button assets
+        run: node scripts/check-buttons.mjs
+
   dependency-review:
     if: github.event_name == 'pull_request'
     uses: flisk-sh/.github/.github/workflows/dependency-review.yml@b5eeea945364038cd2143e9676b77fc9af293dfa # v1.4.0

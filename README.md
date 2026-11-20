@@ -12,12 +12,12 @@ Fastest way (recommended): open the [Flisk starter](https://github.com/flisk-sh/
 </table>
 
 <details>
-<summary>More build tools (6)</summary>
+<summary>More build tools (7)</summary>
 
 <table align="center">
   <tr><td align="center" valign="middle" width="33%"><a href="https://replit.com/github/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-replit.svg" alt="Build app with Replit" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://devpod.sh/open#https://github.com/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-devpod.svg" alt="Build app with DevPod" height="32"></a></td></tr>
   <tr><td align="center" valign="middle" width="33%"><a href="https://stackblitz.com/github/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-stackblitz.svg" alt="Build app with StackBlitz" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://codesandbox.io/p/github/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-codesandbox.svg" alt="Build app with CodeSandbox" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-dev-containers.svg" alt="Build app with Dev Containers" height="32"></a></td></tr>
-  <tr><td align="center" valign="middle" width="33%"><a href="https://studio.firebase.google.com/import?url=https://github.com/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-firebase-studio.svg" alt="Build app with Firebase Studio" height="32"></a></td></tr>
+  <tr><td align="center" valign="middle" width="33%"><a href="https://studio.firebase.google.com/import?url=https://github.com/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-firebase-studio.svg" alt="Build app with Firebase Studio" height="32"></a></td><td align="center" valign="middle" width="33%"><a href="https://glitch.com/edit/#!/import/github/flisk-sh/flisk-cli-starter"><img src="https://raw.githubusercontent.com/flisk-sh/flisk-cli-starter/main/.github/buttons/build-glitch.svg" alt="Build app with Glitch" height="32"></a></td></tr>
 </table>
 
 </details>
