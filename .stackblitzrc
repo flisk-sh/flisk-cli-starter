@@ -1,4 +1,4 @@
 {
   "installDependencies": true,
-  "startCommand": "npx flisk --version"
+  "startCommand": "npx @flisk-sh/flisk --version -y"
 }
