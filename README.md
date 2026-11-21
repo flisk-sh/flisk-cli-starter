@@ -68,34 +68,22 @@ Fastest way (recommended): open the [Flisk starter](https://github.com/flisk-sh/
 
 ## Make the app
 
-Run these from the repo root, where `package.json` is. The Flisk CLI is installed there, so there is no need to make a subfolder.
+Run these from the repo root, where `package.json` is. Flisk needs Bun 1.2 or newer on the PATH.
 
 ```bash
 npm install
 npm run flisk:project
 npm run flisk:resource
+npm install --prefix services/shop/orders-api
 ```
 
-`flisk project` creates the stack. `flisk resource` scaffolds a backend service named `orders-api`, served at `/api/orders`. Flisk needs Bun 1.2 or newer on the PATH; install it first if `bun --version` fails.
+`flisk project` creates the stack. `flisk resource --local` scaffolds a backend service named `orders-api` that runs as a plain process, so no Docker or Tilt is needed. It is served at `/api/orders` and on `http://localhost:4000`.
 
-## Check the stack
-
-Preview what will start before any container runs:
+## Check and start the stack
 
 ```bash
-npm run flisk:dry-run
+npm run flisk:dry-run   # preview, starts nothing
+npm run flisk:up        # starts it; open http://localhost:4000/health, stop with Ctrl-C
 ```
 
-## Start the stack
-
-`flisk up` needs Docker and Tilt on the machine. It starts the stack and keeps running until you stop it.
-
-```bash
-npm run flisk:up
-```
-
-Open the printed `*.localhost` URL. Stop with Ctrl-C.
-
-### In a browser-only builder (Bolt, StackBlitz, Lovable, v0)
-
-These sandboxes have no Docker or Tilt, so `flisk up` cannot run there. Do the steps above up to `npm run flisk:dry-run`, which works without containers, then run `npm run flisk:up` on a machine or cloud dev environment that has Docker and Tilt (Codespaces, Gitpod, Dev Containers).
+This works in Bolt, StackBlitz and other browser sandboxes too. To run it in containers instead, drop `--local` from the `flisk:resource` script; then `flisk up` needs Docker and Tilt.
