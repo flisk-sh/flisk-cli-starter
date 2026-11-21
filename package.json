@@ -5,7 +5,7 @@
   "description": "Starter for making a local app stack with the Flisk CLI",
   "scripts": {
     "flisk:project": "flisk project --yes",
-    "flisk:resource": "flisk resource orders-api --type backend --stack shop --yes",
+    "flisk:resource": "flisk resource orders-api --type backend --stack shop --local --yes",
     "flisk:dry-run": "flisk up shop --dry-run",
     "flisk:up": "flisk up shop"
   },
