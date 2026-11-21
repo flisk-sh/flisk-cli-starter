@@ -4,10 +4,12 @@
   "private": true,
   "description": "Starter for making a local app stack with the Flisk CLI",
   "scripts": {
+    "flisk:project": "flisk project --yes",
+    "flisk:resource": "flisk resource orders-api --type backend --stack shop --yes",
     "flisk:dry-run": "flisk up shop --dry-run",
     "flisk:up": "flisk up shop"
   },
   "devDependencies": {
-    "@flisk-sh/flisk": "1.3.190"
+    "@flisk-sh/flisk": "1.4.72"
   }
 }
