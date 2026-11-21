@@ -68,13 +68,15 @@ Fastest way (recommended): open the [Flisk starter](https://github.com/flisk-sh/
 
 ## Make the app
 
+Run these from the repo root, where `package.json` is. The Flisk CLI is installed there, so there is no need to make a subfolder.
+
 ```bash
-mkdir shop && cd shop
-flisk project --yes
-flisk resource orders-api --type backend --stack shop --yes
+npm install
+npm run flisk:project
+npm run flisk:resource
 ```
 
-`flisk project` creates the stack. `flisk resource` scaffolds a backend service named `orders-api`, served at `/api/orders`.
+`flisk project` creates the stack. `flisk resource` scaffolds a backend service named `orders-api`, served at `/api/orders`. Flisk needs Bun 1.2 or newer on the PATH; install it first if `bun --version` fails.
 
 ## Check the stack
 
@@ -93,3 +95,7 @@ npm run flisk:up
 ```
 
 Open the printed `*.localhost` URL. Stop with Ctrl-C.
+
+### In a browser-only builder (Bolt, StackBlitz, Lovable, v0)
+
+These sandboxes have no Docker or Tilt, so `flisk up` cannot run there. Do the steps above up to `npm run flisk:dry-run`, which works without containers, then run `npm run flisk:up` on a machine or cloud dev environment that has Docker and Tilt (Codespaces, Gitpod, Dev Containers).
