@@ -22,13 +22,12 @@ if (existsSync(join(root, 'docs'))) walk(join(root, 'docs'));
 
 const text = [...new Set(files)].map((path) => readFileSync(path, 'utf8')).join('\n');
 const buttons = readdirSync(buttonDir).filter((name) => name.endsWith('.svg'));
-const unused = buttons.filter((name) => !text.includes(name));
+const referencePattern = /\.github\/buttons\/([A-Za-z0-9._-]+\.svg)/g;
+const references = new Set([...text.matchAll(referencePattern)].map((match) => match[1]));
+const unused = buttons.filter((name) => !references.has(name));
 assert.deepEqual(unused, [], `unused button assets: ${unused.join(', ')}`);
 
-const referencePattern = /\.github\/buttons\/([A-Za-z0-9._-]+\.svg)/g;
-const missing = [
-  ...new Set([...text.matchAll(referencePattern)].map((match) => match[1])),
-].filter((name) => !existsSync(join(buttonDir, name)));
+const missing = [...references].filter((name) => !existsSync(join(buttonDir, name)));
 assert.deepEqual(missing, [], `referenced button assets missing: ${missing.join(', ')}`);
 
 console.log(`all ${buttons.length} button assets are referenced and all references resolve`);
