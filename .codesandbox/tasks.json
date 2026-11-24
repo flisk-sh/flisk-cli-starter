@@ -1,3 +1,8 @@
 {
-  "setupTasks": [{ "name": "Install Flisk CLI", "command": "npm install" }]
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "bash scripts/setup-dev-env.sh"
+    }
+  ]
 }

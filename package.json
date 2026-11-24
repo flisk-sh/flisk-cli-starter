@@ -10,6 +10,7 @@
     "flisk:up": "flisk up shop"
   },
   "devDependencies": {
-    "@flisk-sh/flisk": "1.4.73"
+    "@flisk-sh/flisk": "1.4.73",
+    "bun": "1.2.19"
   }
 }
