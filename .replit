@@ -1,2 +1,2 @@
-run = "npm run flisk:dry-run"
+run = "bash scripts/replit-start.sh"
 entrypoint = "README.md"

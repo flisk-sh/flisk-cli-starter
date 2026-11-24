@@ -31,6 +31,8 @@ jobs:
           node-version: 22
       - name: Check button assets
         run: node scripts/check-buttons.mjs
+      - name: Check dev environment configs
+        run: node scripts/check-dev-envs.mjs
 
   dependency-review:
     if: github.event_name == 'pull_request'
